@@ -39,7 +39,7 @@ h2 = 1 /(1 + 3*s)
 # attributes: h1.num gives the numerator polynomial coeefs, h1.den gives the denominator poly coeffs
 # methods: h1.minreal() simplifies the tf etc
 
-# for a closed loop H(s) = (H1(s)) / (1 + H1(s)H2(s)) 
+# for a closed loop H(s) = (H1(s)) / (1 + H1(s)H2(s)) where H(s) = Y(s) / U(s)
 # numerator is the feed-forward path (from Yref to Y)
 # denominator is 1 + feedback path (Yref back to Yref)
 # print(h1.feedback(h2))  # h1 is the feedforward path, h2 is the feedback path
